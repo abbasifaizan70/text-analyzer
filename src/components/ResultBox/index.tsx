@@ -33,6 +33,7 @@ const ResultBox: React.FC<ResultBoxProps> = ({ text }) => {
     )
 
   useEffect(() => {
+    // const wordCount = text.split(/\s+/).filter(Boolean).length;
     const wordCount = text.split(' ').length;
     const sentences = text.split(/[.!?]/).filter(Boolean).length;
     const paragraph = text.split('\n').filter(Boolean).length;
